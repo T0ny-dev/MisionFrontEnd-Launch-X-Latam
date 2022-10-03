@@ -9,4 +9,5 @@
 ![buyer persona](img/buyerpersona.svg)
 ![publico objetivo](img/publicoobjetivo.jpg)
 ![wireframes](img/frames.png)
+![wireframes2](img/frames2.svg)
 
