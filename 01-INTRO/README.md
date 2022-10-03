@@ -8,5 +8,5 @@
 ![El problema](img/problemadescripcion.svg)
 ![buyer persona](img/buyerpersona.svg)
 ![publico objetivo](img/publicoobjetivo.jpg)
-![wireframes](img/wireframes.png)
+![wireframes](img/frames.png)
 
