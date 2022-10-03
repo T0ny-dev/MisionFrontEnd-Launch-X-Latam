@@ -4,3 +4,9 @@
 
 ## Caso de estudio : Abogabot
 ![Logotipo de Abogabot](img/abogabot.svg)
+![sobre el proyecto](img/sobreproyecto.svg)
+![El problema](img/problema.svg)
+![buyer persona](img/buyerpersona.svg)
+![publico objetivo](img/publicoobjetivo.jpg)
+![wireframes](img/frames.svg)
+
