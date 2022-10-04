@@ -10,4 +10,8 @@
 ![publico objetivo](img/publicoobjetivo.jpg)
 ![wireframes](img/frames.png)
 ![wireframes2](img/frames2.svg)
+## Miro : aqui todos los frames
+[Miro enlace](https://miro.com/app/board/uXjVPRKK4Pg=/)
+![interfaces](img/ui.png)
+![interfaces 2](img/ui2.png)
 
