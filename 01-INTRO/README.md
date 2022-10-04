@@ -10,8 +10,14 @@
 ![publico objetivo](img/publicoobjetivo.jpg)
 ![wireframes](img/frames.png)
 ![wireframes2](img/frames2.svg)
-## Miro : aqui todos los frames
+## Wireframes
 [Miro enlace](https://miro.com/app/board/uXjVPRKK4Pg=/)
 ![interfaces](img/ui.png)
 ![interfaces 2](img/ui2.png)
+![adminpanel docs](img/adminpanel.png)
+![laptop](img/laptop.png)
+## Iconos 
+[Iconos : Flaticons -](https://www.flaticon.es/autores/bharat-icons)
+# Gracias por ver!:sparkles:
+![explorer](img/astronauta.png)
 
