@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Cake N Go</title>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header">
+      <div class="Header__logo">
+        <img src="../img/logo.svg" alt="logo cake n go">
+      </div>
+      <div class="header__links">
+        <a href="#">Especialidades</a>
+        <a href="#">Arma tu pastel</a>
+        <a href="#">Mi Dashboard</a>
+      </div>
+    </div>
+    <!--formulario-->
+    <div>
+      <h1>Crea tu pastel</h1>
+    </div>
+    <div class="formulario">
+      <div class="formulario__image">
+        <img src="../img/cakeorange.png" alt="pastel orange">
+      </div>
+      <div class="formulario__inputs">
+        <select name="menu">
+          <option value="0">Masa</option>
+          <option value="1">Simple</option>
+          <option value="2">Tres Leches</option>
+          <option value="3">Sabor Chocolate</option>
+        </select>
+        <select name="menu">
+          <option value="0">Adornos</option>
+          <option value="1">Simple</option>
+          <option value="2">Premim</option>
+          <option value="3">Deluxe</option>
+        </select>
+        <p>Crema : 
+          <input type="radio" name="boton" value="1" id ="formulario__radio" > Vainilla 
+          <input type="radio" name="boton" value="2" id ="formulario__radio"> Fresa
+          <input type="radio" name="boton" value="3" id ="formulario__radio"> Frambuesa          
+        </p>
+        <input type="text" name="nombre" placeholder=" Nombre">
+        <input type="text" name="direccion" placeholder=" Direccion">
+        <input type="email" name="email" placeholder=" correo electronico">
+        <textarea name="texto" rows="4" cols="40" placeholder=" Descripcion"></textarea>
+        <button type="submit" >Enviar</button>
+      </div>
+    </div>
+    
+    <!--Footer-->
+    <footer>
+      <p>@T0ny-dev</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
