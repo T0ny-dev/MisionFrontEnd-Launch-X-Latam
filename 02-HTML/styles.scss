@@ -59,7 +59,7 @@ html, body {
     justify-content: center;
 
     h1 {
-      font-size: 50px;
+      font-size: 45px;
       margin-bottom: 5vh;
     }
     p {
@@ -73,7 +73,7 @@ html, body {
     align-items: center;
     justify-content: flex-end;
     img {
-      width: 90%;
+      width: 85%;
       object-fit: cover;
     }
   }
@@ -123,6 +123,7 @@ html, body {
       font-weight: 600;
       color: #0f0f0f;
       font-size: 14px;
+      cursor: pointer;
     }
   }
 }
@@ -135,6 +136,7 @@ html, body {
   border-radius: 50px;
   font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .second__button {
@@ -145,6 +147,7 @@ html, body {
   font-weight: 600;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 
 #dashboard {
@@ -156,4 +159,82 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
+}
+
+.html__title{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vh 5vw;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__card {
+    border-radius: 30px;
+    background-color: var(--color-complementario);
+    width: 300px;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+
+    img {
+      object-fit: cover;
+      width: 250px;
+    }
+    p {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+
+  &__inputs {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+
+    input {
+      font-size: 16px;
+      padding: 2vh 2vw;
+      border: none;
+      border-bottom: 3px solid var(--color-secundario);
+    }
+
+    select {
+      padding: 2vh 2vw;
+      font-size: 16px;
+      border: none;
+      border-bottom: 3px solid var(--color-secundario);
+      background-color: #fff;
+    }
+    textarea {
+      font-size: 16px;
+      padding: 2vh 2vw;
+      border: 2px solid gray;
+      border-radius: 20px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  background-color: var(--color-primario);
+  padding: 10vh 5vw;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  justify-content: space-between;
 }
