@@ -1,0 +1,59 @@
+:root {
+  --color-pricipal: #2C4CCA;
+  --color-second: #1F3E72;
+  --color-white:#fff;
+  --blue-button:#3252D0;
+  --blue-ligth:#EEF3FF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boxs;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  padding: 4vh 8vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  text-decoration: none;
+}
+.header__logo {
+  color: var(--color-pricipal);
+  font-weight: 700;
+  font-size: 22px;
+}
+.header__links {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+.header__links a {
+  color: rgb(109, 111, 129);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.primary__button {
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  background-image: linear-gradient(to right, #3252D0 0%, #2341b9 51%, #3252D0 100%);
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.183);
+}
+
+/*# sourceMappingURL=styles.css.map */
