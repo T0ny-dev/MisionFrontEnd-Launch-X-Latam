@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Magic Donuts</title>
+  </head>
+  <body>
+    <div class="column">
+      <img src="../../img/logo.svg" alt="logo">
+      <div class="column__menu">
+        <a href="./dashboard.html">pedidos</a>
+        <a href="./Inventory.html">Inventario</a>
+      </div>
+      <a href="../../index.html">
+        <button class="primary__button">Salir</button>
+      </a>
+    </div>
+    <!--Begin-->
+    <div class="data">
+      <div class="data__resumen">
+        <div class="data__resumen__card">
+          <h2>
+            Valor del inventario
+          </h2>
+          <p>25,000 MXN</p>
+        </div>
+        <div class="data__resumen__card">
+          <h2>
+            Status
+          </h2>
+          <p>OK!</p>
+        </div>
+        <div class="data__resumen__card">
+          <h2>
+            Cantidad de provedores
+          </h2>
+          <p>10</p>
+        </div>
+      </div>
+      <div class="data__movements">
+        <style type="text/css">
+          .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #faa916ff;border-collapse: collapse;}
+          .tftable th {font-size:12px;background-color:#faa916ff;border-width: 1px;padding: 8px;border-style: solid;border-color: #faa916ff;text-align:left;}
+          .tftable tr {background-color:#fff;}
+          .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #fff;}
+          .tftable tr:hover {background-color:#f7eeffff;}
+          </style>
+          
+          <table class="tftable" border="1">
+          <tr><th>Nombre</th><th>Fecha Expiracion</th><th>Provedor</th><th>Cantidad</th><th>Status</th></tr>
+          <tr><td>Harina</td><td>10-12-2023</td><td>hello@mail.com</td><td>10 kg</td><td>OK!</td></tr>
+          <tr><td>Crema</td><td>10-12-2023</td><td>hello@mail.com</td><td>10 L</td><td>OK!</td></tr>
+          <tr><td>Adorno Para siempre!</td><td>10-12-2023</td><td>hello@mail.com</td><td>30 PZ</td><td>OK!</td></tr>
+          <tr><td>Sabor Vainilla</td><td>10-12-2023</td><td>hello@mail.com</td><td>10 L</td><td>OK!</td></tr>
+          <tr><td>Chocolates</td><td>10-12-2023</td><td>hello@mail.com</td><td>20 PZ</td><td>OK!</td></tr>
+          <tr><td>Harina sin gluten</td><td>10-12-2023</td><td>hello@mail.com</td><td>10 Kg</td><td>OK!</td></tr>
+          <tr><td>Huevos</td><td>10-12-2023</td><td>hello@mail.com</td><td>20 PZ</td><td>OK!</td></tr>
+          </table>
+          
+      </div>
+    </div>
+  </body>
+  </html>
