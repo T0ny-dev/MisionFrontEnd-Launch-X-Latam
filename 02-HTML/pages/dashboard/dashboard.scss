@@ -53,3 +53,27 @@ body  {
   }
 }
 
+$Mobile: 670px;
+@media (max-width: $Mobile) {
+  body {
+    flex-direction: column;
+  }
+  .column {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    img {
+      width: 80%;
+      margin-bottom: 2vh;
+    }
+  }
+  .data__resumen {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
