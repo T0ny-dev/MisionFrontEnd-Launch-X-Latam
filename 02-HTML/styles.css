@@ -16,6 +16,8 @@ html, body {
   font-family: var(--fuente-principal);
   font-weight: var(--peso-principal);
   font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -213,6 +215,44 @@ footer {
   color: #fff;
   font-size: 20px;
   justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__links {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+  .banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .banner__title {
+    width: 100%;
+    padding: 5vh 5vw;
+  }
+  .banner__image {
+    justify-content: center;
+  }
+  .special {
+    flex-direction: column;
+  }
+  .special__title {
+    width: 100%;
+    padding: 0vh 5vw;
+  }
+  .prices {
+    justify-content: center;
+  }
+  .form__inputs {
+    width: 80%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 1.5vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

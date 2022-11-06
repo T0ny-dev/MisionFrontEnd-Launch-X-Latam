@@ -23,6 +23,8 @@ html, body {
   font-family: var(--fuente-principal);
   font-weight: var(--peso-principal);
   font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden
 }
 
 .header {
@@ -237,4 +239,43 @@ footer {
   color: #fff;
   font-size: 20px;
   justify-content: space-between;
+}
+
+$Mobile: 670px;
+@media (max-width: $Mobile) {
+  .header  {
+    flex-direction: column;
+    &__links {
+      flex-direction: column;
+      margin-top: 5vh;
+    }
+  }
+  .banner {
+    flex-direction: column;
+    height: auto;
+    &__title {
+      width: 100%;
+      padding: 5vh 5vw;
+    }
+    &__image {
+      justify-content: center;
+    }
+  }
+  .special {
+    flex-direction: column;
+    &__title {
+      width: 100%;
+      padding: 0vh 5vw;
+    }
+  }
+  .prices {
+    justify-content: center;
+  }
+  .form__inputs {
+    width: 80%;
+  }
+  footer {
+    flex-direction: column;
+    gap : 1.5vh;
+  }
 }
