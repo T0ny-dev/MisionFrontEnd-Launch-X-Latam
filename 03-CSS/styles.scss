@@ -125,7 +125,7 @@ html, body {
     background-color:rgba(255, 255, 255, 0.758);
     backdrop-filter: blur(10px);
     padding: 25px 20px;
-    box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.625);
+    box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.259);
 
     &__info {
       display: flex;
@@ -169,4 +169,111 @@ html, body {
 #sinovac {
   height: 1.85rem;
   width: auto;
+  
+}
+
+//mixmin
+@mixin paragraph ($direction:row) {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: $direction;
+  width: 100%;
+  padding: 10vh 8vw;
+  &__info {
+    width: 40%;
+  }
+  h2 {
+    color: #1F3E72;
+    margin-bottom: 3vh;
+    font-size: 30px;
+  }
+  p {
+    color:rgb(109, 111, 129) ;
+  }
+}
+
+.questions {
+  @include paragraph($direction:row)
+}
+
+.questions--blank {
+  width: 60%;
+}
+
+.benefits {
+  padding: 5vh 8vw;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__card {
+    width: 200px;
+    padding: 2vh 1.5vw 8vh 1.5vw;
+    border: 2px solid rgba(109, 111, 129, 0.072) ;
+    border-radius: 10px;
+    span {
+      color: var(--color-pricipal);
+      background-color: #e8ebff;
+      padding: 8px;
+      height: 25px;
+      margin-bottom: 3vh;
+      border-radius: 5px;
+    }
+    h3 {
+      color: #1F3E72;
+      font-weight: 500;
+      margin-bottom: 2vh;
+      
+    }
+    p {
+      color:rgb(109, 111, 129) ;
+    }
+  }
+  &__card:hover {
+    box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159)
+  }
+}
+
+//use the mixmin 
+.questions2 {
+  @include paragraph($direction:row-reverse)
+}
+
+.preparation {
+  display: flex;
+  height: 80vh;
+  gap: 14%;
+
+  &__image {
+    background-image: url("./asset/img/person-mask.png");
+    background-size: cover;
+    background-position: top;
+    width: 45%;
+    margin-top: -10%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+      display: flex;
+      margin-bottom: 10vh;
+
+      p {
+        color:var(--color-second);
+      }
+    }
+  }
+}
+
+.icon-arrow {
+  color: var(--color-pricipal);
+  background-color: #e8ebff;
+  padding: 2px;
+  height: 15px;
+  margin-right: 1vw;
+  font-size: 15px;
+  box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
+  position: absolute;
+  right: 8vw;
 }

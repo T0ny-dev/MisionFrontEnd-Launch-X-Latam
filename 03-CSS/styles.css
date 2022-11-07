@@ -109,7 +109,7 @@ html, body {
   background-color: rgba(255, 255, 255, 0.758);
   backdrop-filter: blur(10px);
   padding: 25px 20px;
-  box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.625);
+  box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.259);
 }
 .banner__date__info {
   display: flex;
@@ -153,6 +153,117 @@ html, body {
 #sinovac {
   height: 1.85rem;
   width: auto;
+}
+
+.questions {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  width: 100%;
+  padding: 10vh 8vw;
+}
+.questions__info {
+  width: 40%;
+}
+.questions h2 {
+  color: #1F3E72;
+  margin-bottom: 3vh;
+  font-size: 30px;
+}
+.questions p {
+  color: rgb(109, 111, 129);
+}
+
+.questions--blank {
+  width: 60%;
+}
+
+.benefits {
+  padding: 5vh 8vw;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.benefits__card {
+  width: 200px;
+  padding: 2vh 1.5vw 8vh 1.5vw;
+  border: 2px solid rgba(109, 111, 129, 0.072);
+  border-radius: 10px;
+}
+.benefits__card span {
+  color: var(--color-pricipal);
+  background-color: #e8ebff;
+  padding: 8px;
+  height: 25px;
+  margin-bottom: 3vh;
+  border-radius: 5px;
+}
+.benefits__card h3 {
+  color: #1F3E72;
+  font-weight: 500;
+  margin-bottom: 2vh;
+}
+.benefits__card p {
+  color: rgb(109, 111, 129);
+}
+.benefits__card:hover {
+  box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
+}
+
+.questions2 {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 10vh 8vw;
+}
+.questions2__info {
+  width: 40%;
+}
+.questions2 h2 {
+  color: #1F3E72;
+  margin-bottom: 3vh;
+  font-size: 30px;
+}
+.questions2 p {
+  color: rgb(109, 111, 129);
+}
+
+.preparation {
+  display: flex;
+  height: 80vh;
+  gap: 14%;
+}
+.preparation__image {
+  background-image: url("./asset/img/person-mask.png");
+  background-size: cover;
+  background-position: top;
+  width: 45%;
+  margin-top: -10%;
+}
+.preparation__content {
+  display: flex;
+  flex-direction: column;
+}
+.preparation__content__section {
+  display: flex;
+  margin-bottom: 10vh;
+}
+.preparation__content__section p {
+  color: var(--color-second);
+}
+
+.icon-arrow {
+  color: var(--color-pricipal);
+  background-color: #e8ebff;
+  padding: 2px;
+  height: 15px;
+  margin-right: 1vw;
+  font-size: 15px;
+  box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
+  position: absolute;
+  right: 8vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
