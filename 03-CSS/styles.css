@@ -60,7 +60,7 @@ html, body {
   display: flex;
 }
 .banner__title {
-  width: 50%;
+  width: 40%;
   padding: 8vh 8vw;
 }
 .banner__title h1 {
@@ -73,8 +73,10 @@ html, body {
   margin-bottom: 8vh;
 }
 .banner__image {
-  width: 50%;
+  width: 60%;
   background-image: url("./asset/img/nurse1.jpg");
+  background-size: contain;
+  height: 105vh;
 }
 .banner__icons {
   display: flex;
@@ -92,13 +94,65 @@ html, body {
   margin-right: 3vw;
   color: #1F3E72;
 }
+.banner__schedule {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5vh;
+}
+.banner__date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.758);
+  backdrop-filter: blur(10px);
+  padding: 25px 20px;
+  box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.625);
+}
+.banner__date__info {
+  display: flex;
+  flex-direction: row;
+}
 
 .icon-blue {
   color: var(--color-pricipal);
   background-color: #e8ebff;
-  padding: 3px 3px;
+  padding: 3px;
+  height: 25px;
   margin-right: 1vw;
   box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
+}
+
+#icon__title--normal {
+  margin-bottom: 1vh;
+}
+
+#icon__title--bold {
+  font-weight: bold;
+  color: var(--color-second);
+  margin-bottom: 1vh;
+}
+
+.brands {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding: 0vh 8vw;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.brands img {
+  height: 3rem;
+  width: auto;
+  opacity: 15%;
+  filter: grayscale(1);
+}
+
+#sinovac {
+  height: 1.85rem;
+  width: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
