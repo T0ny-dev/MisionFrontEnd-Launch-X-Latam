@@ -66,7 +66,21 @@ html, body {
   font-weight: 600;
   font-size: 15px;
   box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.183);
+  cursor: pointer;
   }
+
+  .second__button {
+    padding: 12px 20px;
+    color: var(--color-pricipal);
+    background-color: var(--blue-ligth);
+    border: none;
+    text-align: center;
+    transition: 0.5s;         
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    }
 
 .banner {
   display: flex;
@@ -180,7 +194,7 @@ html, body {
   width: 100%;
   padding: 10vh 8vw;
   &__info {
-    width: 40%;
+    width: 42%;
   }
   h2 {
     color: #1F3E72;
@@ -197,7 +211,7 @@ html, body {
 }
 
 .questions--blank {
-  width: 60%;
+  width: 58%;
 }
 
 .benefits {
@@ -276,4 +290,116 @@ html, body {
   box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
   position: absolute;
   right: 8vw;
+}
+
+.contact {
+  display: flex;
+  height: auto;
+  margin-bottom: 30vh;
+
+  &__image {
+    background-image: url("./asset/img/nurse2.png");
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    margin-top: -10%;
+  }
+  &__links {
+    height: auto;
+    width: 50%;
+    padding: 5vh 10vw;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    &__card {
+      padding: 5vh 2vw;
+      border-radius: 10px;
+      width: 150px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid rgba(109, 111, 129, 0.072) ;
+
+      button:hover {
+        padding: 12px 20px;
+        color: #fff;
+        border: none;
+        background-image: linear-gradient(to right, #3252D0 0%, #2341b9  51%, #3252D0  100%);
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;         
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 15px;
+        box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.183);
+        cursor: pointer;
+      }
+
+      &__info {
+        display: flex;
+        margin-bottom: 3vh;
+
+        h3 {
+          color: #1F3E72;
+          font-weight: 500;
+        }
+        p {
+          font-size: 12px;
+          color:rgb(109, 111, 129);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 8vh 8vw;
+  background-color: var(--blue-ligth);
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 600px;
+    h1 {
+      color: var(--color-pricipal);
+    }
+    p {
+      width: 200px;
+      color:rgb(109, 111, 129);
+    }
+  }
+
+  &__links {
+    h3 {
+      color: var(--color-second);
+    }
+    a {
+      text-decoration: none;
+    }
+    li {
+      color:rgb(109, 111, 129);
+      list-style: none;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.copyrigth {
+  background-color: var(--blue-ligth);
+  padding: 3vh 8vw;
+  display: flex;
+  justify-content: space-between;
+
+  &__links{
+    display: flex;
+    gap: 30px;
+    
+    a{
+      text-decoration: none;
+      color: rgb(109, 111, 129);;
+    }
+  }
 }
