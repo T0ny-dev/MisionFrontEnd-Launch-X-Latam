@@ -46,9 +46,15 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 ### 02-HTML Web de Formulario de pedidos y Dashboard 
 ![HTML](02-HTML/img/home.png)
 
-[Ver repo](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/02-HTML)
+[Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/02-HTML)
+
+[Ver proyecto](https://02-html-launch-x-latam.netlify.app/)
+
+
 
 ### 03-CSS Web de CSS
 ![HTML](03-CSS/asset/img/vaccines.png)
 
-[Ver repo](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/03-CSS)
+[Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/03-CSS)
+
+[Ver proyecto](https://03-css-launch-x-latam.netlify.app/)

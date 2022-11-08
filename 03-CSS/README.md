@@ -31,7 +31,8 @@ Es un portal que debe contar con funcionabilidades:
 * `npm install `  instalara las dependencias de vite
 * `npm run dev `  iniciara el servidor para vista previa en localhost:5173
 
-
+### 💻 Deploy
+- [netlify](https://03-css-launch-x-latam.netlify.app/)
 
 ### 🗎 Capturas del proyecto
 
