@@ -36,3 +36,7 @@ Es un portal que debe contar con funcionabilidades:
 ### 🗎 Capturas del proyecto
 
 ![captura](asset/img/vaccines.png)
+![prevents](asset/img/prevents.png)
+![contact](asset/img/contact.png)
+![tablet](asset/img/tablet.png)
+![mobile](asset/img/mobile.png)

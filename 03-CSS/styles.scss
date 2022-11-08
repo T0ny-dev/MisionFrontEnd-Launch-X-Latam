@@ -22,6 +22,8 @@ $blue-ligth:#EEF3FF;
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -29,6 +31,11 @@ html, body {
   padding: 4vh 8vw;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.758);
+  backdrop-filter: blur(10px);
+  z-index: 1;
 
   a {
     text-decoration: none;
@@ -44,6 +51,7 @@ html, body {
     display: flex;
     gap: 4vw;
     align-items: center;
+    margin-right: 13vw;
 
     a {
       color: rgb(109, 111, 129);
@@ -85,9 +93,11 @@ html, body {
 .banner {
   display: flex;
   
+  
   &__title {
     width: 40%;
     padding: 8vh 8vw;
+    margin-top: 15vh;
 
     h1 {
       color: #1F3E72;
@@ -103,8 +113,10 @@ html, body {
   &__image {
     width: 60%;
     background-image: url("./asset/img/nurse1.jpg");
+    background-repeat: no-repeat;
     background-size: contain;
-    height: 105vh;
+    height: 120vh;
+    margin-right: -10vw;
   }
   &__icons {
     display: flex;
@@ -261,6 +273,7 @@ html, body {
   &__image {
     background-image: url("./asset/img/person-mask.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
     width: 45%;
     margin-top: -10%;
@@ -290,6 +303,7 @@ html, body {
   box-shadow: 0px 10px 15px rgba(44, 9, 239, 0.159);
   position: absolute;
   right: 8vw;
+  z-index: 0;
 }
 
 .contact {
@@ -300,6 +314,7 @@ html, body {
   &__image {
     background-image: url("./asset/img/nurse2.png");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
     width: 50%;
     margin-top: -10%;
@@ -393,13 +408,142 @@ html, body {
   display: flex;
   justify-content: space-between;
 
+  p {
+    color:rgb(109, 111, 129);
+  }
+  
   &__links{
     display: flex;
     gap: 30px;
     
     a{
       text-decoration: none;
-      color: rgb(109, 111, 129);;
+      color: rgb(109, 111, 129);
     }
+  }
+}
+
+
+$tablet: 768px;
+@media (max-width: $tablet) {
+
+  .header {
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    &__links {
+      margin-right: 0vw;
+    }
+  }
+  
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      width: 80%;
+      margin-top: 0vh;
+    }
+    &__date {
+      position: none;
+      width: 80%;
+    }
+    &__image {
+      height: 80vh;
+    }
+  }
+
+  .brands {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .benefits {
+    padding: 5vh 10vw;
+  }
+
+  .questions--blank {
+    display: none;
+  }
+  .questions {
+    justify-content: center;
+    margin-bottom: 5vh;
+    &__info {
+      width: 80%;
+    }
+  }
+  .questions2 {
+    margin-bottom: 10vh;
+    justify-content: center;
+    &__info {
+      width: 80%;
+    }
+  }
+  .preparation__image {
+    display: none;
+  }
+  .preparation__content {
+    padding-left: 10vw;
+  }
+  .contact {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 20vh;
+    &__image {
+      height: 100vh;
+      width: 100%;
+    }
+    &__links {
+      width: 80%;
+      justify-content: center;
+      }
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 80%;
+      padding: 5vh 10vw;
+      text-align: center;
+    }
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+$mobile: 450px;
+@media (max-width: $mobile) {
+  .header__links {
+    flex-direction: column;
+  }
+  .banner__date {
+    width: 70%;
+    flex-direction: column;
+  }
+  .banner__image {
+    visibility: hidden;
+    height: 42vh;
+  }
+  .benefits {
+    justify-content: center;
+  }
+  .footer__logo{
+    p {
+      width: 50%;
+    }
+  }
+  .copyrigth {
+    flex-direction: column;
   }
 }
