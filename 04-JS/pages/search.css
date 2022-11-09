@@ -28,6 +28,7 @@
   color: #fff;
   border-radius: 10px;
   height: 30px;
+  padding-left: 10px;
 }
 .pokedex__search--finder ::placeholder {
   color: rgb(255, 255, 255);
@@ -53,8 +54,37 @@
   align-items: center;
   padding: 2vh 2vw;
 }
+.pokedex__search--pokemons--find h3 {
+  margin: 0;
+}
+.pokedex__search--pokemons--find__pokemon {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pokedex__search--pokemons--find__stats {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  gap: 0.3vh;
+}
+.pokedex__search--pokemons--find__stats h3 {
+  margin: 0;
+}
+.pokedex__search--pokemons--find__info h3 {
+  margin-bottom: 3vh;
+}
+.pokedex__search--pokemons--find__info span {
+  padding: 5px 5px;
+  border: 2px solid rgb(190, 187, 13);
+  border-radius: 50px;
+  transition: ease-in 0.4s;
+}
 .pokedex__search--pokemons--find img {
   width: 30%;
+}
+.pokedex__search--pokemons--find h2 {
+  margin: 0;
 }
 .pokedex__search--pokemons--error {
   display: flex;

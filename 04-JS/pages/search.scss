@@ -28,6 +28,7 @@
         color: #fff;
         border-radius: 10px;
         height: 30px;
+        padding-left: 10px;
       }
       ::placeholder {
         color: rgb(255, 255, 255);
@@ -55,8 +56,41 @@
         align-items: center;
         padding: 2vh 2vw;
 
+        h3 {
+          margin: 0;
+        }
+
+        &__pokemon {
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        &__stats {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          align-items: center;
+          gap: .3vh;
+          h3 {
+            margin: 0;
+          }
+        }
+        &__info {
+          h3 {
+            margin-bottom: 3vh;
+          }
+          span {
+            padding: 5px 5px;
+            border: 2px solid rgb(190, 187, 13);
+            border-radius: 50px;
+            transition: ease-in .4s;
+          }
+        }
         img {
           width: 30%;
+        }
+        h2 {
+          margin: 0;
         }
       }
 
@@ -97,3 +131,7 @@
     }
 
 }
+
+//stats bar colors
+
+
