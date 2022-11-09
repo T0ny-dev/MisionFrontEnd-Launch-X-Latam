@@ -5,10 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./search.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -19,10 +22,40 @@
           <img src="../img/buttons.svg" alt="">
         </div>
         <div class="pokedex__search--finder">
-          <input type="search" name="searchPokemons" placeholder="Buscar...">
+          <input type="text" name="searchPokemons" placeholder="Buscar..." id="search">
+          <button id="button">
+            <span class="material-icons">
+              search
+            </span>
+          </button>
+        </div>
+        <div class="pokedex__search--pokemons">
+          <div class="pokedex__search--pokemons--error">
+            <img src="../img/pokeball_icon_136305.png" alt="pokebola">
+            <h2>No pokemons :(</h2>
+          </div>
+        </div>
+        <div class="pokedex__search__Menu">
+          <a href="../index.html">
+            <button>
+              <span class="material-icons">
+                logout
+              </span>
+            </button>
+          </a>
+          <button>
+            <span class="material-icons">
+            home
+            </span>
+          </button>
+          <button>
+            <span class="material-icons">
+              list
+            </span>
+          </button>
         </div>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>

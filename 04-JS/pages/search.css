@@ -33,5 +33,59 @@
   color: rgb(255, 255, 255);
   font-size: 1em;
 }
+.pokedex__search--finder button {
+  border: none;
+  background-color: #04B590;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 10px;
+  border-bottom: 3px solid #126957;
+}
+.pokedex__search--pokemons {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pokedex__search--pokemons--find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 2vw;
+}
+.pokedex__search--pokemons--find img {
+  width: 30%;
+}
+.pokedex__search--pokemons--error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pokedex__search--pokemons--error img {
+  width: 30%;
+  opacity: 15%;
+  filter: grayscale(1);
+}
+.pokedex__search--pokemons--error h2 {
+  color: rgb(0, 0, 0);
+  opacity: 15%;
+  filter: grayscale(1);
+}
+.pokedex__search__Menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1vh 1vw;
+  background-color: #b40d1d;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.pokedex__search__Menu button {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=search.css.map */
