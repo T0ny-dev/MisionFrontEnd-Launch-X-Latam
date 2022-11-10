@@ -2,6 +2,7 @@
 const pokemon = document.getElementById("search")
 const button = document.getElementById("button")
 const display = document.getElementsByClassName("pokedex__search--pokemons")
+const list = document.getElementById("list")
 
 
 const getPokemon = (pokemon) => {
@@ -17,7 +18,6 @@ const getPokemon = (pokemon) => {
 };
 
 const searchPokemon = (response) => {
-  console.log(response)
   const id = response.data.id;
   const name = response.data.name;
   const skill=response.data.abilities[0].ability.name;
@@ -29,7 +29,6 @@ const searchPokemon = (response) => {
   const specialDefense = response.data.stats[4].base_stat;
   const speed = response.data.stats[5].base_stat;
 
-  console.log(id)
   display[0].innerHTML =
   `
   <div class="pokedex__search--pokemons--find">
@@ -42,7 +41,6 @@ const searchPokemon = (response) => {
       </div>
     </div>
       <h2>#${id}</h2>
-      <h3>STATS</h3>
     <div class="pokedex__search--pokemons--find__stats">
       <h3>Hp : ${hp}</h3>
       <div style="height: 5px;width:${hp}%;background-color: #04B590;border-radius: 50px;"></div>
@@ -78,8 +76,57 @@ const showPokemon = (button, namePokemon) => {
     getPokemon(namePokemon.value)
     .then(searchPokemon)
     .catch(dontFind);
-
+  })
+  pokemon.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      getPokemon(namePokemon.value)
+      .then(searchPokemon)
+      .catch(dontFind);
+    }
   })
 }
 
 showPokemon(button, pokemon);
+
+/*////////////// list pokemons //////////*/
+
+const litsPokemons = () => {
+  return new Promise((resolve, reject) => {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=20&limit=100`)
+      .then((response) => {
+        resolve(response);
+        console.log(response);
+      })
+      .catch((error) => {
+        reject(error);
+    })
+  })
+};
+
+
+
+const showList = (response) => {
+  const list = response.data.results;
+  display[0].innerHTML = 
+  `
+    <div style="width: 100%; height: 350px; overflow-y: scroll; box-sizing: border-box">
+      ${list.map((val, index) =>
+      `
+      <div style="display:flex;align-items: center;padding-left: 2vw;">
+        <h2>#${index + 1}</h2>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${index + 1}.png" alt="pokebola" height="50px" width="auto" style="margin-top: -15px;">
+        <h2>${val.name}</h2>
+      </div>`).join('')}
+    </div>
+  `
+}
+
+const showPokemons = (button) => {
+  button.addEventListener("click", () => {
+    litsPokemons()
+    .then(showList)
+    .catch(dontFind);
+  })
+}
+
+showPokemons(list);

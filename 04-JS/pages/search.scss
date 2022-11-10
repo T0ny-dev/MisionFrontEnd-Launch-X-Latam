@@ -49,28 +49,28 @@
       height: 100%;
       display: flex;
       justify-content: center;
-      
+
       &--find {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:flex-start;
         padding: 2vh 2vw;
-
-        h3 {
-          margin: 0;
-        }
-
+        font-size: 14px;
+        gap: 10px;
+        
         &__pokemon {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-between;
+          padding-right: 2vw;
         }
 
         &__stats {
           display: flex;
           flex-direction: column;
-          width: 80%;
-          align-items: center;
-          gap: .3vh;
+          width: 60%;
+          align-items: flex-start;
+          gap: .5vh;
+          padding-left: 2vw;
           h3 {
             margin: 0;
           }
@@ -91,6 +91,7 @@
         }
         h2 {
           margin: 0;
+          padding-left: 2vw
         }
       }
 
