@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 8vw;
+  align-items: center;
+}
+.header img {
+  height: 45px;
+  width: auto;
+}
+.header button {
+  background-color: #272626;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.header button:hover {
+  background-color: #393838;
+}
+
+.banner {
+  background-image: url("./img/astronaut-6051759_1920-edited-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner--overlay {
+  background-color: rgba(0, 0, 0, 0.417);
+  mix-blend-mode: normal;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 5vh;
+}
+
+.projects__view {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vh 8vw;
+  gap: 5vw;
+  justify-content: space-evenly;
+}
+.projects__view__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 3vh 2vw;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(46, 77, 229, 0.183);
+}
+.projects__view__card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.projects__view__card h3 {
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+.projects__view__card a {
+  background-color: #9463ae;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.projects__view__card a:hover {
+  background-color: #a56fc2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #0f0f0f;
+}
+footer p {
+  color: #fff;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */
