@@ -36,6 +36,13 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 * `npm install `  instalará las dependencias de vite
 * `npm run dev `  iniciara el servidor para vista previa en localhost:5173
 
+### 💻 Deploy GitHub Pages
+- [GitHub Pages](https://t0ny-dev.github.io/MisionFrontEnd-Launch-X-Latam/)
+
+- [Portafolio-Personal](https://t0ny-dev.netlify.app/)
+
+![Navegador](./img/navegador.png)
+
 
 
 ### 🗎 Capturas del proyecto
