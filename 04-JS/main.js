@@ -79,7 +79,7 @@ const showPokemon = (button,namePokemon) => {
   })
   pokemon.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      getPokemon(namePokemon.value)
+      getPokemon(namePokemon.value.toLowerCase())
       .then(searchPokemon)
       .catch(dontFind);
     }
