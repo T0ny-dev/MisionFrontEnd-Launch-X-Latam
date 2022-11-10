@@ -92,7 +92,7 @@ showPokemon(button, pokemon);
 
 const litsPokemons = () => {
   return new Promise((resolve, reject) => {
-    axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=20&limit=100`)
+    axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154`)
       .then((response) => {
         resolve(response);
         console.log(response);
