@@ -109,10 +109,10 @@ const showList = (response) => {
   const list = response.data.results;
   display[0].innerHTML = 
   `
-    <div style="width: 100%; height: 350px; overflow-y: scroll; box-sizing: border-box">
+    <div id="show" style="width: 100%; overflow-y: scroll; box-sizing: border-box">
       ${list.map((val, index) =>
       `
-      <div style="display:flex;align-items: center;padding-left: 2vw;">
+      <div style="display:flex;align-items: center;padding-left: 3vw;">
         <h2>#${index + 1}</h2>
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${index + 1}.png" alt="pokebola" height="50px" width="auto" style="margin-top: -15px;">
         <h2>${val.name}</h2>

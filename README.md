@@ -27,7 +27,7 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 * Metodología BEM CSS
 * Vite
 * JavaScript
-* Axios
+* Libreria Axios
 
 
 ### 💻 Listados comandos 
@@ -54,15 +54,17 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 
 
-### 03-CSS Web de CSS
+### 03-CSS Desafio de CSS
 ![CSS](03-CSS/asset/img/vaccines.png)
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/03-CSS)
 
 [Ver proyecto](https://03-css-launch-x-latam.netlify.app/)
 
-### 04-JS Pokedex Poke-API
+### 04-JS Pokédex PokéAPI
 
 ![JS](04-JS/img/pokedex.png)
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/04-JS)
+
+[Ver proyecto](https://04-js-lauch-x-latam.netlify.app/)
