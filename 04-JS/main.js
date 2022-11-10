@@ -71,9 +71,9 @@ const dontFind = (error) => {
   }
 }
 
-const showPokemon = (button, namePokemon) => {
+const showPokemon = (button,namePokemon) => {
   button.addEventListener("click", () => {
-    getPokemon(namePokemon.value)
+    getPokemon(namePokemon.value.toLowerCase())
     .then(searchPokemon)
     .catch(dontFind);
   })

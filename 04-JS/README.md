@@ -38,14 +38,14 @@ El proyecto  debe contar con funcionabilidades:
 
 ### 💻 Deploy
 
-- [netlify](https://04-js-lauch-x-latam.netlify.app/)
+- [netlify](https://04-js-launch-x-latam.netlify.app/)
 
 ### 🗎 Capturas del proyecto
 
-![pokemon](img/pokedex.png)
-![pokemon2](img/stats.png)
-![pokemon3](img/list.png)
-![mobile](img/mobile0.png)
-![mobile1](img/mobile.png)
-![mobile2](img/mobile2.png)
+![pokemon](img/pokedex2.png)
+![pokemon2](img/pokedex1.png)
+![pokemon3](img/pokedex3.png)
+![mobile](img/pokedex4.png)
+![mobile1](img/pokedex5.png)
+![mobile2](img/pokedex6.png)
 

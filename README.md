@@ -70,8 +70,8 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 ### 04-JS Pokédex PokéAPI
 
-![JS](04-JS/img/pokedex.png)
+![JS](04-JS/img/pokedex2.png)
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/04-JS)
 
-[Ver proyecto](https://04-js-lauch-x-latam.netlify.app/)
+[Ver proyecto](https://04-js-launch-x-latam.netlify.app/)

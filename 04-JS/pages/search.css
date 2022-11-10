@@ -62,6 +62,7 @@
   padding-right: 2vw;
 }
 .pokedex__search--pokemons--find__stats {
+  margin-top: 2.5vh;
   display: flex;
   flex-direction: column;
   width: 60%;
