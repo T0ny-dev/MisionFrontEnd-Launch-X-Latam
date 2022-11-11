@@ -28,6 +28,9 @@ const searchPokemon = (response) => {
   const specialAttack = response.data.stats[3].base_stat;
   const specialDefense = response.data.stats[4].base_stat;
   const speed = response.data.stats[5].base_stat;
+  const type = response.data.types[0].type.name;
+  console.log(response);
+  console.log(type);
 
   display[0].innerHTML =
   `
@@ -36,10 +39,12 @@ const searchPokemon = (response) => {
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png">
       <div class="pokedex__search--pokemons--find__info">
         <h3>${name.toUpperCase()}</h2>
-        <span>${skill}</span>
-        <span>${skill2}</span>
+        <span style="font-size:10px">${skill}</span>
+        <span style="font-size:10px">${skill2}</span>
+        <span style="padding:5px 5px;border: 2px solid #AB04B5;border-radius:30px;font-size:10px">${type}</span>
       </div>
     </div>
+      
       <h2>#${id}</h2>
     <div class="pokedex__search--pokemons--find__stats">
       <h3>Hp : ${hp}</h3>

@@ -1,6 +1,6 @@
 # Ignora archivos del sistema 
 .DS_store
-
+*.vscode
 # Ignora la carpeta node_modules
 node_modules/
 ./02-HTML/node_modules/
