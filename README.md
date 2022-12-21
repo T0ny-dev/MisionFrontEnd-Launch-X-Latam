@@ -62,7 +62,7 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 
 ### 03-CSS Desafio de CSS
-![CSS](03-CSS/asset/img/vaccines.png)
+![CSS](03-CSS/asset/img/03-CSS.pngs)
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/03-CSS)
 
