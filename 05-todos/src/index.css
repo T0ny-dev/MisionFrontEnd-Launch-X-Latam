@@ -30,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: linear-gradient(to left bottom, #8ce1bf, #5dd5ca, #22c7d6, #00b7e0, #00a5e3);
 }
 
 h1 {
@@ -59,7 +60,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    
   }
   a:hover {
     color: #747bff;
@@ -80,7 +81,7 @@ button:focus-visible {
 
 .form {
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
@@ -89,7 +90,44 @@ button:focus-visible {
   gap:1em;
 }
 
+.form__input input {
+  border: 2px solid rgb(187, 185, 185);
+  padding: 10px 20px;
+}
+
+.form__input p {
+  color: #E54E3B;
+}
+
+.form__input textarea {
+  border: 2px solid rgb(187, 185, 185);
+  padding: 10px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
 .form__input {
   display: flex;
   flex-direction: column;
+}
+
+.save {
+  background-color: #914BF2;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.notice {
+  color: #fff;
+  font-size: 18px;
+}
+
+.delete {
+  background-color: #E54E3B;
+  color: #fff;
 }

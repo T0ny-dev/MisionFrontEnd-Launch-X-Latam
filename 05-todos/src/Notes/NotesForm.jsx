@@ -29,16 +29,16 @@ function NotesForm(){
         ({isSubmitting})=>(
           <Form className="form">
             <div className="form__input">
-              <label htmlFor="title">Titulo</label>
-              <Field type="text" name="title"/>
+              <label htmlFor="title">Todo App</label>
+              <Field type="text" name="title" placeholder="Titulo...."/>
               <ErrorMessage name="title" component="p"/>
             </div>
             <div className="form__input">
               <label htmlFor="message">Tarea a Guardar</label>
-              <Field as="textarea" name="message"/>
+              <Field as="textarea" name="message" placeholder="Descripcion ...."/>
               <ErrorMessage name="message" component="p"/>
             </div>
-            <button type='submit' disabled={isSubmitting}>
+            <button type='submit' disabled={isSubmitting} className="save">
               {isSubmitting ? "Guardando todo...":"Guardar todo"}
             </button>
           </Form>
