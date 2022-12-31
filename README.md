@@ -82,3 +82,5 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/05-todos)
 
+[Ver proyecto](https://05-todos-lauch-x-latam.netlify.app/)
+
