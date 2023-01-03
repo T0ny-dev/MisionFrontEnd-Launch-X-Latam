@@ -28,6 +28,7 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 * Vite
 * JavaScript
 * Libreria Axios
+* React
 
 
 ### 💻 Listados comandos 
@@ -66,7 +67,7 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/03-CSS)
 
-[Ver proyecto](https://03-css-launch-x-latam.netlify.app/)
+[Ver proyecto](https://03-css-lauch-x-latam.netlify.app/)
 
 ### 04-JS Pokédex PokéAPI
 
@@ -82,5 +83,5 @@ Es una recopilación de prácticas de la experiencia Launch X Latam:
 
 [Ver repositorio](https://github.com/T0ny-dev/MisionFrontEnd-Launch-X-Latam/tree/main/05-todos)
 
-[Ver proyecto](https://05-todos-lauch-x-latam.netlify.app/)
+[Ver proyecto](https://05-todos-lauch-x-latam-react.netlify.app/)
 
