@@ -6,8 +6,6 @@
 
   color-scheme: light dark;
   color:#1a1a1a;
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,9 +18,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   background-image: linear-gradient(to left bottom, #8ce1bf, #5dd5ca, #22c7d6, #00b7e0, #00a5e3);
+
 }
 
 h1 {
@@ -66,6 +65,8 @@ button {
 .form__input input {
   border: 2px solid rgb(187, 185, 185);
   padding: 10px 20px;
+  background-color: #fff;
+  color: #1a1a1a;
 }
 
 .form__input p {
@@ -75,6 +76,8 @@ button {
 .form__input textarea {
   border: 2px solid rgb(187, 185, 185);
   padding: 10px;
+  background-color: #fff;
+  color: #1a1a1a;
 }
 
 label {
